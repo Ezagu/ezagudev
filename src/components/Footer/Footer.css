@@ -1,17 +1,17 @@
 .footer {
   height: 70px;
   font-size: 14px;
-  color: #666;
+  color: #4b5563;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
 .footer a{
-  color: #666;
+  color: #4b5563;
   transition: color 200ms;
 }
 
 .footer a:hover {
-  color: #000;
+  color: #111827;
 }

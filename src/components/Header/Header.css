@@ -12,29 +12,37 @@
   font-weight: bold;
 }
 
+.header-title>a {
+  text-decoration: none;
+  color: #030712;
+}
+
 .nav-list {
   list-style: none;
   display: flex;
   gap: 20px;
-  
 }
 
 .nav-button {
-  font-size: 18px;
-  font-weight: 500;
   border: none;
   background-color: transparent;
   cursor: pointer;
-  border-bottom: 2px solid transparent;
-  padding-bottom: 3px;
-  transition: border-bottom 200ms;
-}
+  padding: 5px;
 
-.nav-button:hover {
-  border-bottom: 2px solid #000;
 }
 
 .nav-button a {
-  color: #000;
+  font-size: 18px;
+  font-weight: 500;
+  color: #4b5563;
   text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 3px;
+  transition: all 200ms;
 }
+
+.nav-button:hover>a {
+  color: #111827;
+  border-bottom: 2px solid #000;
+}
+
