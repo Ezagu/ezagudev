@@ -43,6 +43,7 @@ code {
 .page-desc {
   margin-top: 10px;
   color: #4b5563;
+  text-wrap: pretty;
 }
 
 .button {
