@@ -52,6 +52,13 @@
   font-size: 14px;
 }
 
+.info-body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .info-item {
   padding: 8px;
   background-color: #e5e7eb;

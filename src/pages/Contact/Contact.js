@@ -10,34 +10,42 @@ export const Contact = () => {
       <div className='contact-content'>
         <div className='info-contact'>
           <h2 className='area-title'>Información</h2>
-          <h3 className='item-title'>
+          <div className='info-body'>
+            <h3 className='item-title'>
             Email
-          </h3>
-          <div className='info-item'>
-            agustincalpedm@gmail.com
-          </div>
-          <h3 className='item-title'>
-            Telefono
-          </h3>
-          <div className='info-item'>
-            +54 11 2587-5034
-          </div>
-          <h3 className='item-title'>
-            Ubicacion
-          </h3>
-          <div className='info-item'>
-            Merlo, Buenos Aires, Argentina
-          </div>
-          <button className='button info-button'>
-            <a href='https://www.github.com/Ezagu' target='_blank' rel='noreferrer'>
-              Github &gt;
+            </h3>
+            <div className='info-item'>
+              agustincalpedm@gmail.com
+            </div>
+            <h3 className='item-title'>
+              Telefono
+            </h3>
+            <div className='info-item'>
+              +54 11 2587-5034
+            </div>
+            <h3 className='item-title'>
+              Ubicacion
+            </h3>
+            <div className='info-item'>
+              Merlo, Buenos Aires, Argentina
+            </div>
+            <a 
+              href='https://www.github.com/Ezagu' 
+              target='_blank' 
+              rel='noreferrer'
+              className='button info-button'
+            >
+            Github &gt;
             </a>
-            </button>
-          <button className='button info-button'>
-            <a href='https://www.linkedin.com/in/agustin-calpe/' target='_blank' rel='noreferrer'>
+            <a
+              href='https://www.linkedin.com/in/agustin-calpe/' 
+              target='_blank' 
+              rel='noreferrer'
+              className='button info-button'
+            >
               Linkedin &gt;
             </a>
-          </button>
+          </div>
         </div>
         <form className='form'>
           <h2 className='area-title'>Envíame un mensaje</h2>

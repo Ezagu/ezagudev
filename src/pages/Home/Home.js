@@ -25,16 +25,22 @@ export const Home = () => {
       </div>
     
       <div className='buttons-container'>
-        <button className='button'>
-          <a href='https://www.github.com/Ezagu' target='_blank' rel='noreferrer'>
+        <a 
+          href='https://www.github.com/Ezagu' 
+          target='_blank' 
+          rel='noreferrer'
+          className='button'
+        >
             Github &gt;
-          </a>
-          </button>
-        <button className='button'>
-          <a href='https://www.linkedin.com/in/agustin-calpe/' target='_blank' rel='noreferrer'>
-            Linkedin &gt;
-          </a>
-        </button>
+        </a>
+        <a 
+          href='https://www.linkedin.com/in/agustin-calpe/' 
+          target='_blank' 
+          rel='noreferrer'
+          className='button'
+        >
+          Linkedin &gt;
+        </a>
       </div>
       
       <div className='personal-img-mask'>

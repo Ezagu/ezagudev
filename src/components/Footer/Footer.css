@@ -10,6 +10,7 @@
 .footer a{
   color: #4b5563;
   transition: color 200ms;
+  text-decoration: underline;
 }
 
 .footer a:hover {
