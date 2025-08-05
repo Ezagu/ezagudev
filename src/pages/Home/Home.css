@@ -1,0 +1,102 @@
+.home-page {
+  display: grid;
+  grid-template-areas: 
+    "title img"
+    "desc img"
+    "info img"
+    "buttons img"
+  ;
+  width: 80%;
+  margin: auto;
+}
+
+.title {
+  grid-area: title;
+  font-size: 50px;
+  color: #111827;
+  margin-bottom: 20px;
+}
+
+.description {
+  grid-area: desc;
+  color: #4b5563;
+  margin-right: 100px;
+  text-wrap: balance;
+}
+
+.description span {
+  color: #111827;
+  font-weight: bold;
+}
+
+.info {
+  grid-area: info;
+  color: #4b5563;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  margin: 20px 0;
+}
+
+.location,
+.state {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  justify-self: center;
+}
+
+.dot {
+  background-color: rgb(8, 167, 8);
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  margin: 0 7.3px;
+}
+
+.img-mask {
+  width: 25px;
+  height: 25px;
+}
+
+.img-mask>img {
+  width: 100%;
+  height: 100%;
+}
+
+.links-container {
+  grid-area: buttons;
+  display: flex;
+  gap: 15px;
+  align-self: self-end;
+}
+
+.links-container a {
+  border: none;
+  background-color: #fff;
+  cursor: pointer ;
+  transition: transform 200ms;
+}
+
+.links-container a:hover {
+  transform: scale(1.1);
+}
+
+.personal-img-mask {
+  grid-area: img;
+  max-width: 300px;
+  max-height: 300px;
+  align-self: center;
+  transition: transform 300ms;
+}
+
+.personal-img-mask:hover {
+  transform: scale(1.2);
+}
+
+.personal-img-mask img {
+  width: 100%;
+  height: 100%;
+  border-radius: 100%;
+  box-shadow: 10px 10px 15px #0007;
+}
