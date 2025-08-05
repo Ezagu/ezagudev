@@ -38,7 +38,7 @@ export const Home = () => {
       </div>
       
       <div className='personal-img-mask'>
-        <img src='images/agustin.jpg' alt='personal picture' />
+        <img src='images/agustin.jpg' alt='Agustín Calpe' />
       </div>
     </div>
   )
