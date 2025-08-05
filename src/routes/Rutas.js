@@ -1,5 +1,5 @@
 import React from 'react'
-import { Routes, Route, BrowserRouter } from 'react-router';
+import { Routes, Route } from 'react-router';
 import { Header } from '../components/Header/Header.js';
 import { Footer } from '../components/Footer/Footer.js';
 import { Home } from '../pages/Home/Home.js';
@@ -14,16 +14,14 @@ export const Rutas = () => {
       <Header />
 
       <section className='content-container'>
-        <BrowserRouter>
-          <Routes>
-            <Route path='/' element={<Home />}/>
-            <Route path='/home' element={<Home />} />
-            <Route path='/projects' element={<Projects />} />
-            <Route path='/skills' element={<Skills />} />
-            <Route path='/curriculum' element={<Curriculum />} />
-            <Route path='/contact' element={<Contact />} />
-          </Routes>
-        </BrowserRouter>
+        <Routes>
+          <Route path='/' element={<Home />}/>
+          <Route path='/home' element={<Home />} />
+          <Route path='/projects' element={<Projects />} />
+          <Route path='/skills' element={<Skills />} />
+          <Route path='/curriculum' element={<Curriculum />} />
+          <Route path='/contact' element={<Contact />} />
+        </Routes>
       </section>
       
       <Footer />
