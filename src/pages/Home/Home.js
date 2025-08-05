@@ -13,7 +13,7 @@ export const Home = () => {
       <div className='info'>
         <div className='location'>
           <div className='img-mask'>
-            <img src='images/icon-location.svg' alt='location' />
+            <img src='images/home/icon-location.svg' alt='location' />
           </div>
           <p className='location-text'>Buenos Aires, Argentina</p>
         </div>
@@ -44,7 +44,7 @@ export const Home = () => {
       </div>
       
       <div className='personal-img-mask'>
-        <img src='images/agustin.jpg' alt='Agustín Calpe' />
+        <img src='images/home/agustin-calpe.webp' alt='Agustín Calpe' />
       </div>
     </div>
   )

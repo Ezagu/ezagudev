@@ -9,44 +9,44 @@ export const Header = () => {
       <nav>
         <ul className='nav-list'>
           <li>
-            <button className='nav-button'>
-              <NavLink 
-                to='/home' 
-                className={({isActive}) => isActive ? 'active' : ''}
-              >Home</NavLink>
-            </button>
+            <NavLink 
+              to='/home' 
+              className={({isActive}) => isActive ? 'link active' : 'link'}
+            >
+              Home
+            </NavLink>
           </li>
           <li>
-            <button className='nav-button'>
-              <NavLink 
-                to='/projects'
-                className={({isActive}) => isActive ? 'active' : ''}
-              >Projects</NavLink>
-            </button>
+            <NavLink 
+              to='/projects'
+              className={({isActive}) => isActive ? 'link active' : 'link'}
+            >
+              Projects
+            </NavLink>
           </li>
           <li>
-            <button className='nav-button'>
-              <NavLink
-                to='/skills'
-                className={({isActive}) => isActive ? 'active' : ''}
-              >Skills</NavLink>
-            </button>
+            <NavLink 
+              to='/skills'
+              className={({isActive}) => isActive ? 'link active' : 'link'}
+            >
+              Skills
+            </NavLink>
           </li>
           <li>
-            <button className='nav-button'>
-              <NavLink 
-                to='/curriculum'
-                className={({isActive}) => isActive ? 'active' : ''}
-              >Curriculum</NavLink>
-            </button>
+            <NavLink 
+              to='/curriculum'
+              className={({isActive}) => isActive ? 'link active' : 'link'}
+            >
+              Curriculum
+            </NavLink>
           </li>
           <li>
-            <button className='nav-button'>
-              <NavLink 
-                to='/contact'
-                className={({isActive}) => isActive ? 'active' : ''}
-              >Contact</NavLink>
-            </button>
+            <NavLink 
+              to='/contact'
+              className={({isActive}) => isActive ? 'link active' : 'link'}
+            >
+              Contact
+            </NavLink>
           </li>
         </ul>
       </nav>

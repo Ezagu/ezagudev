@@ -43,7 +43,7 @@
 .state {
   display: flex;
   align-items: center;
-  gap: 10px;
+  gap: 6px;
   justify-self: center;
 }
 
@@ -52,12 +52,12 @@
   width: 10px;
   height: 10px;
   border-radius: 100%;
-  margin: 0 7.3px;
+  margin: 0 5px;
 }
 
 .img-mask {
-  width: 25px;
-  height: 25px;
+  width: 20px;
+  height: 20px;
 }
 
 .img-mask>img {

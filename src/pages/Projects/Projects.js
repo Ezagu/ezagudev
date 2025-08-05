@@ -15,7 +15,7 @@ export const Projects = () => {
       <section className='projects'>
         <article className='project'>
           <div className='project-img'>
-            <img src='/images/projects/mechanography.png'/>
+            <img src='/images/projects/mechanography.png' alt=''/>
           </div>
           <h3 className='project-title'>Mechanography</h3>
           <p className='project-desc'>Test de cuan rápido escribes</p>
@@ -29,7 +29,7 @@ export const Projects = () => {
 
         <article className='project'>
           <div className='project-img'>
-            <img src='/images/projects/mechanography.png'/>
+            <img src='/images/projects/mechanography.png' alt=''/>
           </div>
           <h3 className='project-title'>Mechanography</h3>
           <p className='project-desc'>Test de cuan rápido escribes</p>
@@ -43,7 +43,7 @@ export const Projects = () => {
 
         <article className='project'>
           <div className='project-img'>
-            <img src='/images/projects/mechanography.png'/>
+            <img src='/images/projects/mechanography.png' alt=''/>
           </div>
           <h3 className='project-title'>Mechanography</h3>
           <p className='project-desc'>Test de cuan rápido escribes</p>
@@ -57,7 +57,7 @@ export const Projects = () => {
 
         <article className='project'>
           <div className='project-img'>
-            <img src='/images/projects/mechanography.png'/>
+            <img src='/images/projects/mechanography.png' alt=''/>
           </div>
           <h3 className='project-title'>Mechanography</h3>
           <p className='project-desc'>Test de cuan rápido escribes</p>
