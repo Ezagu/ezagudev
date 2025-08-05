@@ -13,9 +13,9 @@
 
 .skill-area {
   width: 30%;
-  border: 2px solid #4b5563;
   border-radius: 20px;
   padding: 20px;
+  box-shadow: 0 2px 4px 1px #0002;
 }
 
 .skill-container {
