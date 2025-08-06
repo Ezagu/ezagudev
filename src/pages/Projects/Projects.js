@@ -1,38 +1,62 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Projects.css';
 import projects from '../../data/projects.js';
-
-console.log(projects);
+import { Project } from '../../components/Project.js';
 
 export const Projects = () => {
+  let filters = new Set();
+  projects.forEach(project => {
+    project.tecs.forEach((tec) => {
+      filters.add(tec);
+    });
+  });
+  filters = Array.from(filters);
+
+  const [filtersActive, setFiltersActive] = useState([]);
+
+  const projectsFiltered = filtersActive.length === 0
+  ? projects
+  : projects.filter((project) =>(
+    project.tecs.some((tec) => (filtersActive.includes(tec)))
+  ));
+
+  
+  const toggleFilter = (filter) => {
+    if (filtersActive.includes(filter)) {
+      const newFilters = filtersActive.filter((f) => (f != filter));
+      setFiltersActive(newFilters);
+    } else {
+      setFiltersActive(prev => ([...prev, filter]));
+    }
+  };
+
   return (
     <div className='project-page'>
       <h1 className='page-title'>Projects</h1>
       <p className='page-desc'>Algunos de los proyectos que realicé</p>
       <div className='filter'>
-        <button className='filter-item filter-item-active'>Javascript</button>
-        <button className='filter-item'>Html</button>
-        <button className='filter-item'>Css</button>
-        <button className='filter-item'>React</button>
+        {
+          filters.map((filter) => (
+            <button 
+              className={`filter-item ${filtersActive.includes(filter) ? 'filter-item-active' : ''}`}
+              onClick={() => {toggleFilter(filter)}}
+              key={filter}
+            > 
+              {filter}
+            </button>
+          ))
+        }
       </div>
       <section className='projects'>
         {
-          projects.map((project, i) => (
-            <article className='project' key={i}>
-              <div className='project-img'>
-                <img src={project.img} alt={project.nombre + 'screenshot'}/>
-              </div>
-              <h3 className='project-title'>{project.nombre}</h3>
-              <p className='project-desc'>{project.desc_short}</p>
-              <div className='project-tec'>
-                {
-                  project.tecs.map((tec) => (
-                    <div className='tec'>{tec}</div>
-                  ))
-                }
-              </div>
-              <button className='button project-button'>Conoce más &gt;</button>
-            </article>
+          projectsFiltered.map((project, i) => (
+            <Project 
+              nombre={project.nombre}
+              img={project.img}
+              desc={project.desc_short}
+              tecs={project.tecs}
+              i={i}
+            />
           ))
         }
       </section>
