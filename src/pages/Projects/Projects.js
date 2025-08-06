@@ -55,7 +55,7 @@ export const Projects = () => {
               img={project.img}
               desc={project.desc_short}
               tecs={project.tecs}
-              i={i}
+              key={i}
             />
           ))
         }

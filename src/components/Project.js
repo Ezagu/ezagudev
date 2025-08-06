@@ -2,7 +2,7 @@ import React from 'react'
 
 export const Project = ({nombre, img, desc, tecs, i}) => {
   return (
-    <article className='project' key={i}>
+    <article className='project'>
       <div className='project-img'>
         <img src={img} alt={nombre + 'screenshot'}/>
       </div>

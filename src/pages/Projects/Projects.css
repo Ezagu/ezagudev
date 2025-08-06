@@ -16,7 +16,13 @@
   background-color: #e5e7eb;
   padding: 5px 15px;
   border-radius: 10px;
+  box-shadow: 0 3px 2px #0004;
   cursor: pointer;
+  transition: all 200ms;
+}
+
+.filter-item:hover {
+  transform: scale(1.1);
 }
 
 .filter-item-active {
