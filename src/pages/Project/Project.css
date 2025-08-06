@@ -9,7 +9,7 @@
   grid-template-rows: 25px min-content 1fr min-content min-content;
   grid-template-columns: 50% 50%;
   gap: 20px;
-  width: 70%;
+  width: 60%;
   margin: auto;
   text-align: center;
 }
@@ -17,18 +17,16 @@
 .back-link {
   grid-area: back;
   justify-self: flex-start;
-  text-decoration: underline;
   font-size: 18px;
   margin-left: 20px;
   margin-bottom: 20px;
 }
 
-.project-page .title {
-  grid-area: title;
-  margin: 0;
+.back-link:hover {
+  text-decoration: underline;
 }
 
-.project-page .project-img {
+.project-img {
   grid-area: img;
   width: 100%;
   height: 100%;
@@ -38,20 +36,27 @@
   box-shadow: 0 4px 4px #0004;
 }
 
-.project-page .project-img img {
+.project-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   contain: size;
 }
 
-.desc {
+.project-title {
+  grid-area: title;
+  margin: 0;
+  font-size: 30px;
+  text-align: start;
+}
+
+.project-desc {
   grid-area: desc;
   color: #4b5563;
   text-align: start;
 }
 
-.tecs-container {
+.project-tecs-container {
   grid-area: tecs;
   display: flex;
   align-items: center;
@@ -60,17 +65,17 @@
   flex-wrap: wrap;
 }
 
-.project-page .tec {
-  font-size: 18px;
-  padding: 5px 15px;
+.project-tecs-container .tec {
+  font-size: 16px;
 }
 
-.project-page .buttons-container {
+.project-buttons-container {
   grid-area: buttons;
   display: flex;
   justify-content: center;
+  gap: 10px;
 }
 
-.project-page .buttons-container .button {
+.project-buttons-container .button {
   width: 100%;
 }

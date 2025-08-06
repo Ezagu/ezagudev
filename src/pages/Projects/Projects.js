@@ -37,11 +37,11 @@ export const Projects = () => {
 
       <p className='page-desc'>Algunos de los proyectos en los que estuve trabajando. Desde pequeñas ideas hasta desafíos más complejos, cada uno fue una oportunidad para aprender y crecer como desarrollador.</p>
 
-      <div className='filter'>
+      <div className='projects-filter'>
         {
           filters.map((filter) => (
             <button 
-              className={`filter-item ${filtersActive.includes(filter) ? 'filter-item-active' : ''}`}
+              className={`tec projects-filter-item ${filtersActive.includes(filter) ? 'projects-filter-item-active' : ''}`}
               onClick={() => {toggleFilter(filter)}}
               key={filter}
             > 
@@ -51,7 +51,7 @@ export const Projects = () => {
         }
       </div>
 
-      <section className='projects'>
+      <section className='projects-container'>
         {
           projectsFiltered.map((project, i) => (
             <ProjectCard

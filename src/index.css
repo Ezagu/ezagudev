@@ -46,9 +46,11 @@ a{
 }
 
 .page-desc {
-  margin-top: 10px;
   color: #4b5563;
-  text-wrap: pretty;
+  text-wrap: balance;
+  max-width: 80%;
+  margin: auto;
+  margin-top: 10px;
 }
 
 .button {
@@ -63,4 +65,11 @@ a{
 
 .button:hover {
   background-color: #374151;
+}
+
+.tec {
+  font-size: 14px;
+  background-color: #e5e7eb;
+  padding: 4px 12px;
+  border-radius: 8px;
 }

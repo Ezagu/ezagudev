@@ -13,10 +13,17 @@ export const Project = () => {
       <Link to='/projects' className='back-link'>&lt; Projects</Link>
       
       <div className='project-img'>
-        <img src={`../${matchingProject.img}`}/>
+        <img 
+          src={`../${matchingProject.img}`}
+          alt={`${matchingProject.nombre} screenshot`}
+        />
       </div>
 
-      <div className='tecs-container'>
+      <h1 className='project-title'>{matchingProject.nombre}</h1>
+
+      <p className='project-desc'>{matchingProject.desc}</p>
+
+      <div className='project-tecs-container'>
         {
           matchingProject.tecs.map((tec,i) => (
             <div key={i} className='tec'>{tec}</div>
@@ -24,7 +31,7 @@ export const Project = () => {
         }
       </div>
 
-      <div className='buttons-container'>
+      <div className='project-buttons-container'>
         {
           matchingProject.git &&
           <a 
@@ -48,10 +55,8 @@ export const Project = () => {
           </a>
         }
       </div>
-
-      <h1 className='title'>{matchingProject.nombre}</h1>
       
-      <p className='desc'>{matchingProject.desc}</p>
+      
     </div>
   )
 }

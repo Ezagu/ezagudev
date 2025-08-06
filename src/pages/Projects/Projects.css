@@ -4,33 +4,30 @@
   text-align: center;
 }
 
-.filter {
+.projects-filter {
   margin-top: 40px;
   display: flex;
   justify-content: center;
   gap: 10px;
 }
 
-.filter-item {
+.projects-filter-item {
   border: none;
-  background-color: #e5e7eb;
-  padding: 5px 15px;
-  border-radius: 10px;
   box-shadow: 0 3px 2px #0004;
   cursor: pointer;
   transition: all 200ms;
 }
 
-.filter-item:hover {
+.projects-filter-item:hover {
   transform: scale(1.1);
 }
 
-.filter-item-active {
+.projects-filter-item-active {
   background-color: #111827;
   color: #fff;
 }
 
-.projects {
+.projects-container {
   margin: 50px 0;
   display: flex;
   flex-wrap: wrap;
@@ -38,7 +35,9 @@
   justify-content: center;
 }
 
-.project {
+/*---------PROJECT CARD---------*/
+
+.project-card {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -46,45 +45,42 @@
   max-width: 400px;
   transition: all 200ms;
   border-radius: 10px;
-  box-shadow: 0 4px 3px #0002;
+  box-shadow: 0 4px 8px #0002;
 }
 
-.project:hover {
+.project-card:hover {
   transform: scale(1.03);
 }
 
-.projects-page .project-img {
+.project-card-img {
   width: 100%;
   height: 200px;
   overflow: hidden;
-  border-radius: 10px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  box-shadow: 0 4px 3px #0001;
 }
 
-.projects-page .project-img img {
+.project-card-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: all 200ms;
 }
 
-.project:hover .project-img img {
-  transform: scale(1.05);
-}
-
-.project-title {
-  margin: 15px;
-  margin-bottom: 0;
+.project-card-title {
+  margin: 25px 15px;
+  margin-bottom: 15px;
   font-size: 23px;
 }
 
-.project-desc {
-  margin-top: 8px;
+.project-card-desc {
   margin-left: 15px;
   color: #4b5563;
   text-align: start;
 }
 
-.project-tec {
+.project-card-tec-container {
   margin: 15px;
   display: flex;
   justify-content: center;
@@ -92,14 +88,7 @@
   gap: 10px;
 }
 
-.tec {
-  font-size: 14px;
-  background-color: #e5e7eb;
-  padding: 4px 12px;
-  border-radius: 8px;
-}
-
-.project-button {
+.project-card .button {
   margin-left: 15px;
   margin-bottom: 15px;
 }

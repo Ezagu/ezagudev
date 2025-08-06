@@ -10,11 +10,11 @@ export const Skills = () => {
 
       <p className='page-desc'>Estas son algunas de las tecnologías y herramientas que manejo. Siempre estoy explorando nuevas formas de mejorar y mantenerme actualizado en el mundo del desarrollo.</p>
 
-      <section className='skill-content'>
+      <section className='skills-content'>
         {
           skills.map((area, i) => (
-            <article className='skill-area' key={i}>
-              <h2 className='area-title'>{area.area}</h2>
+            <article className='skills-area' key={i}>
+              <h2 className='skills-area-title'>{area.area}</h2>
               <div className='skill-container'>
                 {
                   area.items.map((skill) => (

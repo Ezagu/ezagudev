@@ -4,13 +4,6 @@
   text-align: center;
 }
 
-.page-desc {
-  max-width: 60%;
-  margin: 0 auto;
-  margin-top: 10px;
-  text-wrap: pretty;
-}
-
 .contact-content {
   margin-top: 40px;
   display: flex;
@@ -37,21 +30,21 @@
   max-width: 500px;
 }
 
-.area-title {
-  color: #111827;
-  font-size: 24px;
-  margin-bottom: 10px;
+.contact-area-title {
+  font-size: 26px;
+  margin-bottom: 18px;
 }
 
-.item-title {
+.contact-label-item {
   text-align: start;
-  margin-top: 10px;
-  margin-bottom: 5px;
+  margin: 10px 0;
   padding-left: 3px;
   color: #4b5563;
   font-size: 14px;
   font-weight: 600;
 }
+
+/*-------INFORMACION-------*/
 
 .info-body {
   height: 100%;
@@ -71,15 +64,22 @@
   margin-top: 15px;
 }
 
-.form input,
-.form textarea {
+/*------ENVIAR MENSAJE-------*/
+
+.form .contact-label-item {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.input {
   padding: 8px;
   border-radius: 10px;
   font-size: 16px;
-  border: 1px solid#4b5563;
+  border: 1px solid #4b5563;
 }
 
-.form textarea {
+.contact-label-item textarea {
   resize: none;
 }
 

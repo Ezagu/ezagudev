@@ -10,7 +10,7 @@
   margin: auto;
 }
 
-.title {
+.home-title {
   grid-area: title;
   font-size: 50px;
   color: #111827;
@@ -18,7 +18,7 @@
   text-wrap: balance;
 }
 
-.description {
+.home-desc {
   grid-area: desc;
   color: #4b5563;
   margin-right: 100px;
@@ -65,17 +65,11 @@
   height: 100%;
 }
 
-.buttons-container {
+.home-buttons-container {
   grid-area: buttons;
   display: flex;
   gap: 10px;
   align-self: self-end;
-}
-
-.buttons-container a {
-  border: none;
-  cursor: pointer ;
-  transition: transform 200ms;
 }
 
 .personal-img-mask {
