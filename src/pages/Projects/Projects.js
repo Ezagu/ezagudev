@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import './Projects.css';
 import projects from '../../data/projects.js';
-import { Project } from '../../components/Project.js';
+import { ProjectCard } from '../../components/ProjectCard.js';
 
 export const Projects = () => {
   let filters = new Set();
@@ -23,7 +23,7 @@ export const Projects = () => {
   
   const toggleFilter = (filter) => {
     if (filtersActive.includes(filter)) {
-      const newFilters = filtersActive.filter((f) => (f != filter));
+      const newFilters = filtersActive.filter((f) => (f !== filter));
       setFiltersActive(newFilters);
     } else {
       setFiltersActive(prev => ([...prev, filter]));
@@ -31,7 +31,7 @@ export const Projects = () => {
   };
 
   return (
-    <div className='project-page'>
+    <div className='projects-page'>
       <h1 className='page-title'>Projects</h1>
       <p className='page-desc'>Algunos de los proyectos que realicé</p>
       <div className='filter'>
@@ -50,7 +50,7 @@ export const Projects = () => {
       <section className='projects'>
         {
           projectsFiltered.map((project, i) => (
-            <Project 
+            <ProjectCard
               nombre={project.nombre}
               img={project.img}
               desc={project.desc_short}

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Project = ({nombre, img, desc, tecs, i}) => {
+export const ProjectCard = ({nombre, img, desc, tecs, i}) => {
   return (
     <article className='project'>
       <div className='project-img'>
