@@ -64,12 +64,12 @@
   padding: 5px 15px;
 }
 
-.buttons-container {
+.project-page .buttons-container {
   grid-area: buttons;
   display: flex;
   justify-content: center;
 }
 
-.buttons-container .button {
+.project-page .buttons-container .button {
   width: 100%;
 }

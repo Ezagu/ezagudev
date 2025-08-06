@@ -28,9 +28,10 @@ export const Project = () => {
         {
           matchingProject.git &&
           <a 
-              className='button'
-              href={matchingProject.git}
-              rel='noreferrer'
+            className='button'
+            href={matchingProject.git}
+            rel='noreferrer'
+            target='_blank'
           >
             Github &gt;
           </a>
@@ -41,6 +42,7 @@ export const Project = () => {
             className='button'
             href={matchingProject.url}
             rel='noreferrer'
+            target='_blank'
           >
             Link &gt;
           </a>

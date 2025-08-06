@@ -32,8 +32,11 @@ export const Projects = () => {
 
   return (
     <div className='projects-page'>
+
       <h1 className='page-title'>Projects</h1>
-      <p className='page-desc'>Algunos de los proyectos que realicé</p>
+
+      <p className='page-desc'>Algunos de los proyectos en los que estuve trabajando. Desde pequeñas ideas hasta desafíos más complejos, cada uno fue una oportunidad para aprender y crecer como desarrollador.</p>
+
       <div className='filter'>
         {
           filters.map((filter) => (
@@ -47,6 +50,7 @@ export const Projects = () => {
           ))
         }
       </div>
+
       <section className='projects'>
         {
           projectsFiltered.map((project, i) => (
@@ -55,11 +59,13 @@ export const Projects = () => {
               img={project.img}
               desc={project.desc_short}
               tecs={project.tecs}
+              id={project.id}
               key={i}
             />
           ))
         }
       </section>
+      
     </div>
   )
 }

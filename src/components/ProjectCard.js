@@ -1,6 +1,7 @@
 import React from 'react'
+import { Link } from 'react-router'
 
-export const ProjectCard = ({nombre, img, desc, tecs, i}) => {
+export const ProjectCard = ({nombre, img, desc, tecs, id}) => {
   return (
     <article className='project'>
       <div className='project-img'>
@@ -15,7 +16,12 @@ export const ProjectCard = ({nombre, img, desc, tecs, i}) => {
           ))
         }
       </div>
-      <button className='button project-button'>Conoce más &gt;</button>
+      <Link
+        className='button project-button'
+        to={`/projects/${id}`}
+      >
+        Conoce más &gt;
+      </Link>
     </article>
   )
 }

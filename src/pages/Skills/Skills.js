@@ -5,8 +5,11 @@ import skills from '../../data/skills.js'
 export const Skills = () => {
   return (
     <div className='skill-page'>
+
       <h1 className='page-title'>Skills</h1>
-      <p className='page-desc'>Las habilidades, herramientas y tecnologías en las que soy bueno</p>
+
+      <p className='page-desc'>Estas son algunas de las tecnologías y herramientas que manejo. Siempre estoy explorando nuevas formas de mejorar y mantenerme actualizado en el mundo del desarrollo.</p>
+
       <section className='skill-content'>
         {
           skills.map((area, i) => (
