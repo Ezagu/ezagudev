@@ -10,46 +10,55 @@ export const Contact = () => {
       <div className='contact-content'>
         <div className='info-contact'>
           <h2 className='contact-area-title'>Información</h2>
+
           <div className='info-body'>
-
-            <h3 className='contact-label-item'>
+            <div className='info-item'>
+              <h3 className='contact-label-item info-item-title'>
               Email
-            </h3>
+              </h3>
+              <p className='info-item-text'>
+                agustincalpedm@gmail.com
+              </p>
+            </div>
+            
             <div className='info-item'>
-              agustincalpedm@gmail.com
+              <h3 className='contact-label-item info-item-title'>
+                Telefono
+              </h3>
+              <p className='info-item-text'>
+                +54 11 2587-5034
+              </p>
+            </div>
+            
+            <div className='info-item'>
+              <h3 className='contact-label-item info-item-title'>
+                Ubicacion
+              </h3>
+              <div className='info-item-text'>
+                Merlo, Buenos Aires, Argentina
+              </div>
             </div>
 
-            <h3 className='contact-label-item'>
-              Telefono
-            </h3>
-            <div className='info-item'>
-              +54 11 2587-5034
+            <div className='info-buttons-container'>
+              <a 
+                href='https://www.github.com/Ezagu' 
+                target='_blank' 
+                rel='noreferrer'
+                className='button info-button'
+              >
+                Github &gt;
+              </a>
+
+              <a
+                href='https://www.linkedin.com/in/agustin-calpe/' 
+                target='_blank' 
+                rel='noreferrer'
+                className='button info-button'
+              >
+                Linkedin &gt;
+              </a>
             </div>
-
-            <h3 className='contact-label-item'>
-              Ubicacion
-            </h3>
-            <div className='info-item'>
-              Merlo, Buenos Aires, Argentina
-            </div>
-
-            <a 
-              href='https://www.github.com/Ezagu' 
-              target='_blank' 
-              rel='noreferrer'
-              className='button info-button'
-            >
-              Github &gt;
-            </a>
-
-            <a
-              href='https://www.linkedin.com/in/agustin-calpe/' 
-              target='_blank' 
-              rel='noreferrer'
-              className='button info-button'
-            >
-              Linkedin &gt;
-            </a>
+            
           </div>
         </div>
         <form className='form'>

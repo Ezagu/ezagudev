@@ -10,7 +10,10 @@ export const Project = () => {
   
   return (
     <div className='project-page'>
-      <Link to='/projects' className='back-link'>&lt; Projects</Link>
+      <Link 
+        to='/#projects' 
+        className='back-link'
+      >&lt; Projects</Link>
       
       <div className='project-img'>
         <img 

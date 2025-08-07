@@ -6,12 +6,12 @@ export const Header = () => {
   return (
     <header className='header' id='home'>
       <div className='header-content'>
-        <h2 className='header-title'><a href='#home'>&lt;Ezagu /&gt;</a></h2>
+        <h2 className='header-title'><a href='#'>&lt;Ezagu /&gt;</a></h2>
         <nav>
           <ul className='nav-list'>
             <li>
               <a 
-                href='#home' 
+                href='#' 
                 className='link'
               >
                 Home
