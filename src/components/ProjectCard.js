@@ -7,8 +7,6 @@ export const ProjectCard = ({nombre, img, desc, tecs, id}) => {
       <div className='project-card-img'>
         <img src={img} alt={nombre + 'screenshot'}/>
       </div>
-      <h2 className='project-card-title'>{nombre}</h2>
-      <p className='project-card-desc'>{desc}</p>
       <div className='project-card-tec-container'>
         {
           tecs.map((tec, j) => (
@@ -16,6 +14,8 @@ export const ProjectCard = ({nombre, img, desc, tecs, id}) => {
           ))
         }
       </div>
+      <h2 className='project-card-title'>{nombre}</h2>
+      <p className='project-card-desc'>{desc}</p>
       <Link
         className='button'
         to={`/projects/${id}`}

@@ -71,19 +71,18 @@
 }
 
 .project-card-title {
-  margin: 25px 15px;
-  margin-bottom: 15px;
+  margin: 0 15px;
+  margin-bottom: 5px;
   font-size: 23px;
 }
 
 .project-card-desc {
-  margin-left: 15px;
+  margin: 0 15px;
   color: #4b5563;
-  text-align: start;
-}
+  text-align: start;}
 
 .project-card-tec-container {
-  margin: 15px;
+  margin: 15px 10px;
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -91,6 +90,6 @@
 }
 
 .project-card .button {
-  margin-left: 15px;
-  margin-bottom: 15px;
+  margin: 15px;
+  margin-top: 25px;
 }

@@ -3,6 +3,8 @@
   margin: 0 auto;
   text-align: center;
   min-height: 100vh;
+  display: grid;
+  align-content: center;
 }
 
 .contact-content {
@@ -38,7 +40,7 @@
 
 .contact-label-item {
   text-align: start;
-  margin: 10px 0;
+  margin: 7px 0;
   padding-left: 3px;
   color: #4b5563;
   font-size: 14px;
@@ -78,7 +80,7 @@
 .form .contact-label-item {
   display: flex;
   flex-direction: column;
-  gap: 3px;
+  gap: 5px;
 }
 
 .input {
@@ -86,6 +88,7 @@
   border-radius: 10px;
   font-size: 16px;
   border: 1px solid #4b5563;
+  background-color: transparent;
 }
 
 .contact-label-item textarea {
@@ -94,5 +97,12 @@
 
 .form-submit {
   letter-spacing: 1.6px;
-  margin-top: 15px;
+  margin-top: 8px;
+  background-color: #111827;
+  color: #fff;
+  transition: all 200ms;
+}
+
+.form-submit:hover {
+  background-color: #4b5563;
 }

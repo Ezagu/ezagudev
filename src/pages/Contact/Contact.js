@@ -83,7 +83,7 @@ export const Contact = () => {
           <input 
             type='submit' 
             value='ENVIAR' 
-            className='input button form-submit'/>
+            className='button form-submit'/>
         </form>
       </div>
     </div>
