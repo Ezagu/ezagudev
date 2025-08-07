@@ -31,7 +31,7 @@ export const Projects = () => {
   };
 
   return (
-    <div className='projects-page'>
+    <div className='projects-content' id='projects'>
 
       <h1 className='page-title'>Projects</h1>
 

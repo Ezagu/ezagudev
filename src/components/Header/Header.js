@@ -4,44 +4,46 @@ import './Header.css';
 
 export const Header = () => {
   return (
-    <header className='header'>
-      <h2 className='header-title'><Link to='/home'>&lt;Ezagu /&gt;</Link></h2>
-      <nav>
-        <ul className='nav-list'>
-          <li>
-            <NavLink 
-              to='/home' 
-              className={({isActive}) => isActive ? 'link active' : 'link'}
-            >
-              Home
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to='/projects'
-              className={({isActive}) => isActive ? 'link active' : 'link'}
-            >
-              Projects
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to='/skills'
-              className={({isActive}) => isActive ? 'link active' : 'link'}
-            >
-              Skills
-            </NavLink>
-          </li>
-          <li>
-            <NavLink 
-              to='/contact'
-              className={({isActive}) => isActive ? 'link active' : 'link'}
-            >
-              Contact
-            </NavLink>
-          </li>
-        </ul>
-      </nav>
+    <header className='header' id='home'>
+      <div className='header-content'>
+        <h2 className='header-title'><a href='#home'>&lt;Ezagu /&gt;</a></h2>
+        <nav>
+          <ul className='nav-list'>
+            <li>
+              <a 
+                href='#home' 
+                className='link'
+              >
+                Home
+              </a>
+            </li>
+            <li>
+              <a 
+                href='#projects'
+                className='link'
+              >
+                Projects
+              </a>
+            </li>
+            <li>
+              <a 
+                href='#skills'
+                className='link'
+              >
+                Skills
+              </a>
+            </li>
+            <li>
+              <a 
+                href='#contact'
+                className='link'
+              >
+                Contact
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
     </header>
   )
 }

@@ -4,7 +4,7 @@ import skills from '../../data/skills.js'
 
 export const Skills = () => {
   return (
-    <div className='skill-page'>
+    <div className='skills-page' id='skills'>
 
       <h1 className='page-title'>Skills</h1>
 

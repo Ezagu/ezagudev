@@ -1,5 +1,5 @@
-.skill-page {
-  width: 80%;
+.skills-page {
+  max-width: 1200px;
   margin: 0 auto;
   text-align: center;
 }
@@ -14,13 +14,12 @@
 .skills-area {
   width: 30%;
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px 20px;
   box-shadow: 0 2px 4px 1px #0002;
 }
 
 .skills-area-title {
   font-size: 30px;
-  margin: 10px 0;
   margin-bottom: 35px;
 }
 
