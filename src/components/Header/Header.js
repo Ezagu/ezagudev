@@ -6,7 +6,7 @@ export const Header = () => {
     <header className='header'>
       <div className='header-content'>
         <h2 className='header-title'><a href='#home'>&lt;Ezagu /&gt;</a></h2>
-        <nav>
+        <nav className='header-nav'>
           <ul className='nav-list'>
             <li>
               <a 
