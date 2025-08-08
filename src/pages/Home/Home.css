@@ -93,3 +93,56 @@
   border-radius: 100%;
   box-shadow: 10px 10px 15px #0007;
 }
+
+@media (max-width: 850px) {
+  .home-content {
+    grid-template-areas: 
+      "img"
+      "title"
+      "desc"
+      "info"
+      "buttons"
+    ;
+    text-align: center;
+  }
+
+  .personal-img-mask {
+    justify-self: center;
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .home-title {
+    margin-top: 30px;
+    margin-bottom: 5px;
+    font-size: 30px;
+  }
+
+  .home-desc {
+    margin: 0;
+    font-size: 14px;
+    text-wrap: pretty;
+  }
+
+  .info {
+    margin: 15px 0;
+    font-size: 12px;
+    flex-direction: row;
+    justify-self: center;
+    gap: 10px;
+  }
+
+  .location,
+  .state {
+    gap: 3px;
+  }
+
+  .dot {
+    margin: 0;
+    margin-right: 3px;
+  }
+
+  .home-buttons-container {
+    justify-self: center;
+  }
+}

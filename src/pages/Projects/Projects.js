@@ -4,6 +4,7 @@ import projects from '../../data/projects.js';
 import { ProjectCard } from '../../components/ProjectCard.js';
 
 export const Projects = () => {
+  
   let filters = new Set();
   projects.forEach(project => {
     project.tecs.forEach((tec) => {
@@ -41,7 +42,7 @@ export const Projects = () => {
         {
           filters.map((filter) => (
             <button 
-              className={`tec projects-filter-item ${filtersActive.includes(filter) ? 'projects-filter-item-active' : ''}`}
+              className={`button projects-filter-item ${filtersActive.includes(filter) ? 'projects-filter-item-active' : ''}`}
               onClick={() => {toggleFilter(filter)}}
               key={filter}
             > 

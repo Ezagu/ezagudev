@@ -66,6 +66,7 @@
   background-color: #e5e7eb;
   border-radius: 10px;
   text-align: start;
+  box-shadow: 0 4px 2px #0002;
 }
 
 .info-buttons-container {

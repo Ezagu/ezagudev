@@ -6,6 +6,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  box-shadow: 0 -2px 4px #4b556311;
 }
 
 .footer a{

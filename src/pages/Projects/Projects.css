@@ -14,12 +14,9 @@
 .projects-filter-item {
   border: none;
   box-shadow: 0 3px 2px #0004;
+  font-size: 16px;
   cursor: pointer;
   transition: all 200ms;
-}
-
-.projects-filter-item:hover {
-  transform: scale(1.1);
 }
 
 .projects-filter-item-active {

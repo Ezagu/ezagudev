@@ -1,17 +1,16 @@
 import React from 'react';
-import { NavLink, Link } from 'react-router';
 import './Header.css';
 
 export const Header = () => {
   return (
-    <header className='header' id='home'>
+    <header className='header'>
       <div className='header-content'>
-        <h2 className='header-title'><a href='#'>&lt;Ezagu /&gt;</a></h2>
+        <h2 className='header-title'><a href='#home'>&lt;Ezagu /&gt;</a></h2>
         <nav>
           <ul className='nav-list'>
             <li>
               <a 
-                href='#' 
+                href='#home' 
                 className='link'
               >
                 Home
