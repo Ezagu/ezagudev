@@ -11,7 +11,7 @@
   margin-top: 40px;
   display: flex;
   justify-content: center;
-  gap: 30px;
+  gap: 20px;
 }
 
 .info-contact,
@@ -26,11 +26,13 @@
 .info-contact {
   width: 40%;
   max-width: 325px;
+  margin-left: 20px;
 }
 
 .form {
   width: 60%;
   max-width: 500px;
+  margin-right: 20px;
 }
 
 .contact-area-title {
@@ -106,4 +108,25 @@
 
 .form-submit:hover {
   background-color: #4b5563;
+}
+
+@media (max-width: 750px) {
+  .contact-page {
+    margin: 0;
+  }
+
+  .contact-content {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .info-contact,
+  .form {
+    max-width: none;
+    width: 100%;
+    margin: 0;
+  }
+
 }
