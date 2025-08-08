@@ -67,6 +67,10 @@
     border-radius: 0px;
   }
 
+  .header-title {
+    font-size: 20px;
+  }
+
   .header-nav {
     display: none;
   }

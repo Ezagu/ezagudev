@@ -17,7 +17,7 @@ export const ProjectCard = ({nombre, img, desc, tecs, id}) => {
       <h2 className='project-card-title'>{nombre}</h2>
       <p className='project-card-desc'>{desc}</p>
       <Link
-        className='button'
+        className='button project-card-button'
         to={`/projects/${id}`}
       >
         Conoce más &gt;

@@ -110,7 +110,7 @@
   background-color: #4b5563;
 }
 
-@media (max-width: 750px) {
+@media (max-width: 800px) {
   .contact-page {
     margin: 0;
   }
@@ -119,12 +119,12 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding: 40px;
   }
 
   .info-contact,
   .form {
-    max-width: none;
+    max-width: 500px;
     width: 100%;
     margin: 0;
   }
