@@ -1,4 +1,6 @@
 .project-page {
+  margin: auto;
+  max-width: 80%;
   display: grid;
   grid-template-areas:
     "back back"
@@ -9,9 +11,6 @@
   grid-template-rows: 25px min-content 1fr min-content min-content;
   grid-template-columns: 50% 50%;
   gap: 20px;
-  width: 60%;
-  margin: auto;
-  text-align: center;
 }
 
 .back-link {
@@ -78,4 +77,23 @@
 
 .project-buttons-container .button {
   width: 100%;
+}
+
+@media (max-width: 800px) {
+  .project-page {
+    display: flex;
+    flex-direction: column;
+    margin: auto 30px;
+    max-width: none;
+  }
+
+  .project-buttons-container {
+    margin-bottom: 20px;
+  }
+
+  .back-link {
+    align-self: flex-start;
+    margin: 0;
+    margin-top: 20px;
+  }
 }
