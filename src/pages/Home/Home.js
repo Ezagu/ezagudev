@@ -7,7 +7,7 @@ export const Home = () => {
       <h1 className='home-title'>Hola! soy Agustín Calpe 👋</h1>
 
       <p className='home-desc'>
-        <span>Desarrollador web fullstack</span> en formación. Estudio Licenciatura en Informática mientras continúo ampliando mis conocimientos en JS, React, Node.js y más. Me encuentro en <span>búsqueda activa</span> de mi primer empleo IT, con <span>total disponibilidad</span> y muchas ganas de seguir aprendiendo, crecer profesionalmente y aportar en proyectos reales.
+        <span>Desarrollador web fullstack</span> en formación. Estudio Licenciatura en Informática mientras continúo ampliando mis conocimientos con diversos cursos. Me encuentro en <span>búsqueda activa</span> de mi primer empleo IT, con <span>total disponibilidad</span> y muchas ganas de seguir aprendiendo, crecer profesionalmente y aportar en proyectos reales.
       </p>
 
       <div className='info'>

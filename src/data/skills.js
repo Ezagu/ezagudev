@@ -51,6 +51,20 @@ const skills = [
         id: 'java',
         nombre: 'Java',
         img: 'images/skills/java.svg'
+      },
+      {
+        id: 'nodejs',
+        nombre: 'NodeJS',
+        img: 'images/skills/nodejs.svg'
+      },
+      {
+        id: 'express',
+        nombre: 'Express',
+        img: 'images/skills/express.svg'
+      },{
+        id: 'mongodb',
+        nombre: 'MongoDB',
+        img: 'images/skills/mongodb.svg'
       }
     ]
   },
@@ -71,6 +85,10 @@ const skills = [
         id: 'vscode',
         nombre: 'VS Code',
         img: 'images/skills/vscode.svg'
+      }, {
+        id: 'postman',
+        nombre: 'Postman',
+        img: 'images/skills/postman.svg'
       }
     ]
   }

@@ -20,16 +20,6 @@ const projects = [
     url: 'https://to-do-list-beta-six-99.vercel.app/'
   },
   {
-    id: 'weatherapp',
-    nombre: 'Weather app',
-    img: 'images/projects/wheaterapp.webp',
-    desc_short: 'Consulta el clima actual de cualquier ciudad con esta app.',
-    desc: 'Aplicación del clima que permite buscar una ciudad y ver el estado actual del tiempo utilizando la API de OpenWeatherMap. Hace uso de fetch para obtener datos externos y mostrarlos dinámicamente en la interfaz. El proyecto destaca el manejo de promesas, estructura de datos en formato JSON, validación de entradas y renderizado en tiempo real. Se utilizó JavaScript sin frameworks.',
-    tecs: ['html', 'css', 'javascript'],
-    git: 'https://github.com/Ezagu/WeatherApp',
-    url: 'https://weather-app-theta-lemon-67.vercel.app/'
-  },
-  {
     id: 'minesweeper',
     nombre: 'Minesweeper',
     img: 'images/projects/minesweeper.webp',
