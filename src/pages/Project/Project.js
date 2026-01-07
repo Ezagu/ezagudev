@@ -1,19 +1,22 @@
 import React from 'react';
-import { Link, useParams } from 'react-router';
+import { Link, useNavigate, useParams } from 'react-router';
 import projects from '../../data/projects';
 import './Project.css';
 
 export const Project = () => {
   
   const {projectId} = useParams();
+
+  const navigate = useNavigate();
+
   const matchingProject = projects.find((project) => (project.id === projectId));
   
   return (
     <div className='project-page'>
-      <Link 
-        to='/#projects' 
+      <a 
         className='back-link'
-      >&lt; Projects</Link>
+        onClick={() => {navigate(-1)}}
+      >&lt; Projects</a>
       
       <div className='project-img'>
         <img 
