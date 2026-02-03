@@ -1,27 +1,23 @@
-import React from 'react'
-import { Link } from 'react-router'
+import { Link } from "react-router";
 
-export const ProjectCard = ({nombre, img, desc, tecs, id}) => {
+export const ProjectCard = ({ nombre, img, desc, tecs, id }) => {
   return (
-    <article className='project-card'>
-      <div className='project-card-img'>
-        <img src={img} alt={nombre + 'screenshot'}/>
+    <article className="project-card">
+      <div className="project-card-img">
+        <img src={img} alt={nombre + "screenshot"} />
       </div>
-      <div className='project-card-tec-container'>
-        {
-          tecs.map((tec, j) => (
-            <div className='tec' key={j}>{tec}</div>
-          ))
-        }
+      <div className="project-card-tec-container">
+        {tecs.map((tec, j) => (
+          <div className="tec" key={j}>
+            {tec}
+          </div>
+        ))}
       </div>
-      <h2 className='project-card-title'>{nombre}</h2>
-      <p className='project-card-desc'>{desc}</p>
-      <Link
-        className='button project-card-button'
-        to={`/projects/${id}`}
-      >
+      <h2 className="project-card-title">{nombre}</h2>
+      <p className="project-card-desc">{desc}</p>
+      <Link className="button project-card-button" to={`/projects/${id}`}>
         Conoce más &gt;
       </Link>
     </article>
-  )
-}
+  );
+};

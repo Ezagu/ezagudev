@@ -19,6 +19,9 @@
   font-size: 18px;
   margin-left: 20px;
   margin-bottom: 20px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .back-link:hover {

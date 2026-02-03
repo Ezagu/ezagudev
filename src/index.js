@@ -1,9 +1,6 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
-import { Rutas } from './routes/Rutas';
+import ReactDOM from "react-dom/client";
+import "./index.css";
+import { Rutas } from "./routes/Rutas";
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <Rutas />
-)
+const root = ReactDOM.createRoot(document.getElementById("root"));
+root.render(<Rutas />);

@@ -1,12 +1,18 @@
-import React from 'react';
-import './Footer.css';
+import "./Footer.css";
 
 export const Footer = () => {
   return (
-    <footer className='footer'>
+    <footer className="footer">
       <p>
-        &copy; {new Date().getFullYear()} - Hecho con 💖 por Ezagu - <a href="https://github.com/Ezagu/ezagudev" target="_blank" rel="noreferrer">github page</a>
+        &copy; {new Date().getFullYear()} - Hecho con 💖 por Ezagu -{" "}
+        <a
+          href="https://github.com/Ezagu/ezagudev"
+          target="_blank"
+          rel="noreferrer"
+        >
+          github page
+        </a>
       </p>
     </footer>
-  )
-}
+  );
+};
